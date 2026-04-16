@@ -65,7 +65,7 @@ WITH joined AS (
   SELECT
     u.UserID,
     CASE
-      WHEN u.Province = ' ' THEN 'Coming_Soon'
+      WHEN u.Province = ' ' THEN 'Not Provided'
       WHEN u.Province = 'None' THEN 'Not Provided'
       ELSE u.Province
     END AS Province,
